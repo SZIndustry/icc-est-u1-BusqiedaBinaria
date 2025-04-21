@@ -85,7 +85,6 @@ public class MetodoBusquedaBinario {
     }
 
     public void showPersonByAge() {
-        showConsole.mostrarPersonas(people);
         showConsole.showBanner();
         int index = showConsole.inputCode();
         int age = findPersonByAge(index);

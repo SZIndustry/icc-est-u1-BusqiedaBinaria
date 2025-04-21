@@ -1,18 +1,77 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Práctica de Método de busqueda Binaria
 
-## Folder Structure
+## 📌 Información General
 
-The workspace contains two folders by default, where:
+- **Título:** Práctica de Metodos de Busqueda
+- **Asignatura:** Estructura de Datos
+- **Carrera:** Computación
+- **Estudiante:** Cristopher Salinas
+- **Fecha:** 21/04/2025
+- **Profesor:** Ing. Pablo Torres
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🛠️ Descripción
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Aplicación que recibe un arreglo de personas con dos atributos (Edad y nombre) y un elemnto que es la edad a buscar con un esquema referente:
 
-## Dependency Management
+• Entrada:  
+o Arreglo ingresado por teclado. 
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+o Ordenar el arreglo con el método que desee.  
+
+• Salida:  
+o Arreglo en cada búsqueda, alto, bajo, valor de centro.   
+o Elemento encontrado o no.  
+o Indicar si va a buscar en el subarreglo de la derecha o izquierda.  
+
+---
+
+## 🚀 Ejecución
+
+Para ejecutar el proyecto:
+
+1. Compila el código:
+    ```bash
+    javac App.java
+    ```
+2. Ejecuta la aplicación:
+    ```bash
+    java App
+    ```
+3. Ingresa la cantidad de personas
+    ```bash
+    Ingrese la cantidad de personas:
+    ```
+5. Ingresa los datos:
+    ```bash
+    Nombre:
+    Edad:
+    ```
+2. Edad a buscar:
+    ```bash
+    Ingrese la edad que desea buscar:
+    ```
+
+---
+
+## 🧑‍💻 Ejemplo de SALIDA 
+
+
+8 | 4 | 5 | 9 | 12 | 18 | 25 | 40 | 60
+
+bajo=0 alto=8 centro=4 valorCentro=12 --> DERECHA
+
+18 | 25 | 40 | 60
+
+bajo=5 alto=8 centro=6 valorCentro=25 --> IZQUIERDA
+
+18 |
+
+bajo=5 alto=5 centro=5 valorCentro=18 --> ENCONTRADO
+
+La persona con la edad 18 es Pablo
+
+
+---

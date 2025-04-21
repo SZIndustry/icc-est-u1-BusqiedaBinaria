@@ -32,7 +32,7 @@
             return new Person(nombre, edad);
         }
 
-        public void mostrarPersonas(models.Person[] personas) {
+        public void mostrarPersonas(Person[] personas) {
             System.out.println("\n--- Listado de Personas ---");
             for (Person p : personas) {
                 System.out.println(p.toString());
